@@ -1,0 +1,1 @@
+'use strict';(function(factory){if(typeof define==='function'&&define.amd){define(function(){return factory(window);});}else if(typeof module==='object'&&module.exports){module.exports=function(root){return factory(root);};}else{factory(window);}}(function(window){

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="./jquery.v2.js"></script>
+  <script src="../build/subtitles.min.js"></script>
+<!--   <script src="../src/util/html.js"></script>
+  <script src="../src/util/javascript.js"></script>
+  <script src="../src/util/arrays.js"></script>
+  <script src="../src/util/objects.js"></script>
+  <script src="../src/util/strings.js"></script>
+  <script src="../src/util/properties.js"></script>
+  <script src="../src/util/events.js"></script>
+  <script src="../src/util/class.js"></script>
+  <script src="../src/util/elements.js"></script>
+
+  <script src="../src/subtitles/subtitles.js"></script>
+  <script src="../src/subtitles/defaultoptions.js"></script>
+  <script src="../src/subtitles/texttracklist.js"></script>
+  <script src="../src/subtitles/texttrack.js"></script>
+  <script src="../src/subtitles/texttrackcue.js"></script>
+
+  <script src="../src/integration/jquery.js"></script> -->
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+  <body>
+    <div class="video mode">
+
+      <video preload="none" id="c-40" src="c-40.mp4" muted="true" loop="true" poster="c-40.jpg">
+        <track kind="captions" src="c-40-de.vtt" type="text/vtt" srclang="de" label="Deutsch" default>
+        <track kind="captions" src="c-40.vtt" type="text/vtt" srclang="en" label="English">
+      </video>
+
+    </div>
+    <div class="subtitles">
+    </div>
+  </body>
+  <script>
+      var $video = $('video').subtitles($(".subtitles"));
+      $video[0].play();
+  </script>
+</html>
