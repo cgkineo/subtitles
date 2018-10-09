@@ -13,7 +13,6 @@ $ npm run build
 
     $("video").subtitles(".subtitles");
     $("video")[0].subtitles.tracks[0].default = true;
-    $("video").subtitles("destroy");
 
 ```
 
